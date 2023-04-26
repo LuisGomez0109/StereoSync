@@ -1,0 +1,1 @@
+# Proyecto de StereoSync - Reproductor Web Online
