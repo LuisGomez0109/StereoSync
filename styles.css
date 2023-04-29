@@ -5,7 +5,7 @@
 }
 div.contenedor{
     position: absolute;
-    background: linear-gradient(to right, #232526, #414345);
+    background: linear-gradient(to bottom, #000000, #434343);
     width: 99vw;
     height: 100vw;
 }
