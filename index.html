@@ -4,84 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StereoSync - Reproductor Web</title>
+    <title>StereoSync — Reproductor Web</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="contenedor">
-        <div class="menuizq">
-            <div class="menu">
-                <ul>
-                    <div class="logo">
-                        <img src="/Imagenes/StereoSyncFullLogo.svg" alt="">
+    <div class="mt-0 p-0 bg-gradient-to-b from-white via-white to-gray-300 w-screen h-screen" id="cont">
+        <header class="bg-black p-2 flex flex-row ">
+                <div class="ml-3" id="logo">
+                    <a href="#">
+                        <img src="Imagenes/StereoSyncFullLogo.svg" alt="">
+                    </a>
+                </div>       
+                <div class='max-w-md mx-auto'>
+                    <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
+                        <div class="border-black grid place-items-center h-full w-12 text-black-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <input class="peer h-full w-full outline-none text-sm text-black-700 pr-2" type="text" id="busqueda" placeholder="¿Qué deseas escuchar?" /> 
                     </div>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/Home.svg" alt="">
-                            <span>Inicio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/trends.svg" alt="">
-                            <span>Trends</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/mundito.svg" alt="">
-                            <span>¡Descubre!</span>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="division-menu">
-                            <span class="div-menu">Librería</span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/Reloj.svg" alt="">
-                            <span>Recientes</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/Corazon.svg" alt="">
-                            <span>Favoritos</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/group.svg" alt="">
-                            <span>Artista favorito</span>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="division-menu">
-                            <span class="div-menu">Playlist</span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/Añadir.svg" alt="">
-                            <span>Crear nueva</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/group.svg" alt="">
-                            <span>Tiktok trends 2023</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/imagenes/group.svg" alt="">
-                            <span>Nueva 2023</span>
-                        </a>
-                    </li>
-                </ul>
+                </div>
+        </header>
+        <main class="">
+            <div class="" id="full-izq">
+                <div class="mt-5 w-1/5 rounded-xl py-2 w-full" id="izq-part1">
+                    <ul class="text-black text-base">
+                        <li>
+                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                                <img class="bg-black p-3 rounded-t-lg" src="Imagenes/Home.svg" alt="">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                                <img class="bg-black p-3" src="/Imagenes/trends.svg" alt="">
+                                <span>Trends</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                                <img class="bg-black p-3 rounded-b-lg" src="/Imagenes/Corazon.svg" alt="">
+                                <span>Favoritos</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-5 mb-5 w-1/5 rounded-xl py-2 w-full" id="izq-part2">
+                    <ul class="text-black text-base">
+                        <li>
+                            <div class="ml-3 flex flex-row items-center gap-3">
+                                <img class="bg-black p-3 rounded-t-lg" src="/Imagenes/Libreria.svg" alt="">
+                                <span>Tu biblioteca</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                                <img class="bg-black p-3" src="/Imagenes/Añadir.svg" alt="">
+                                <span>Crear nueva playlist</span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                                <img class="bg-black p-3" src="/Imagenes/carpeta.svg" alt="">
+                                <span>Música nueva 2023</span>
+                            </a>   
+                        </li>
+                        <li>
+                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                                <img class="bg-black p-3" src="/Imagenes/carpeta.svg" alt="">
+                                <span>TikTok trend</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                                <img class="bg-black p-3 rounded-b-lg" src="/Imagenes/carpeta.svg" alt="">
+                                <span>R&B Classic</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            
+        </main>
     </div>
 </body>
 </html>
