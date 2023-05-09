@@ -1,15 +1,17 @@
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-div.contenedor{
+} */
+/* div.contenedor{
     position: absolute;
     background: linear-gradient(to bottom, #000000, #434343);
     width: 99vw;
     height: 100vw;
-}
-.menu ul li a span{
+    display: flex; 
+}*/
+
+/* .menu ul li a span{
     position: relative;
     padding: 25px;
 }
@@ -38,3 +40,31 @@ a{
     font-size: 1.4rem;
     color: #BEBEBE;
 }
+.medio input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    height: 3rem;
+    width: 20rem;
+    
+    
+}
+.search-box{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 15px;
+    padding: 10px;
+}
+.medio{
+    margin: 0 auto;
+} */
