@@ -9,9 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="mt-0 p-0 bg-gradient-to-b from-white via-white to-gray-300 w-screen h-screen" id="cont">
+    <div class="mt-0 p-0 bg-gradient-to-b from-neutral-700 to-zinc-900 w-screen h-screen" id="cont">
         <header class="bg-black p-2 flex flex-row ">
-                <div class="ml-3" id="logo">
+                <div class="ml-1" id="logo">
                     <a href="#">
                         <img src="Imagenes/StereoSyncFullLogo.svg" alt="">
                     </a>
@@ -26,74 +26,70 @@
                         <input class="peer h-full w-full outline-none text-sm text-black-700 pr-2" type="text" id="busqueda" placeholder="¿Qué deseas escuchar?" /> 
                     </div>
                 </div>
-                <div id="head-der">
-                    <div>
-                        <div class="relative h-32 w-32 mt-2">
-                            <div class="absolute left-0 top-0 bg-red-500 rounded-full">
-                                <span class="text-sm text-white p-1">1</span>
-                             </div>
-                                <div class="p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="text-gray-600 w-6 h-6" viewBox="0 0 16 16"><path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
-                                    </svg>
-                                </div>
-                             </div>
-                        </div>
+                <div class="flex flex-row items-center gap-2 border-2 rounded-full" id="head-der">
+                    <div class="border-2 border-white rounded-full" id="pprofile">
+                        <img class="w-9 h-9 rounded-full" src="/Imagenes/pprofile.jpg" alt="">
                     </div>
+                    <div id="nameprofile">
+                        <span class="text-white">Luis Gómez</span>
+                    </div>
+                    <div></div>
+                </div>
         </header>
         <main class="">
             <div class="" id="full-izq">
-                <div class="mt-5 w-1/5 rounded-xl py-2 w-full" id="izq-part1">
-                    <ul class="text-black text-base">
+                <div class="mt-5 ml-1 w-1/5 rounded-xl border-black border-2" id="izq-part1">
+                    <ul class="text-white text-base">
                         <li>
-                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
-                                <img class="bg-black p-3 rounded-t-lg" src="Imagenes/Home.svg" alt="">
+                            <a href="#" class="flex flex-row items-center gap-3">
+                                <img class="bg-black p-3 rounded-tl-lg" src="Imagenes/Home.svg" alt="">
                                 <span>Home</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                            <a href="#" class="flex flex-row items-center gap-3">
                                 <img class="bg-black p-3" src="/Imagenes/trends.svg" alt="">
                                 <span>Trends</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
-                                <img class="bg-black p-3 rounded-b-lg" src="/Imagenes/Corazon.svg" alt="">
+                            <a href="#" class="flex flex-row items-center gap-3">
+                                <img class="bg-black p-3 rounded-bl-lg" src="/Imagenes/Corazon.svg" alt="">
                                 <span>Favoritos</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="mt-5 mb-5 w-1/5 rounded-xl py-2 w-full" id="izq-part2">
-                    <ul class="text-black text-base">
+                <div class="mt-5 ml-1 w-1/5 rounded-xl border-black border-2" id="izq-part2">
+                    <ul class="text-white text-base">
                         <li>
-                            <div class="ml-3 flex flex-row items-center gap-3">
-                                <img class="bg-black p-3 rounded-t-lg" src="/Imagenes/Libreria.svg" alt="">
+                            <div class="flex flex-row items-center gap-3">
+                                <img class="bg-black p-3 rounded-tl-lg" src="/Imagenes/Libreria.svg" alt="">
                                 <span>Tu biblioteca</span>
                             </div>
                         </li>
 
                         <li>
-                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                            <a href="#" class="flex flex-row items-center gap-3">
                                 <img class="bg-black p-3" src="/Imagenes/Añadir.svg" alt="">
                                 <span>Crear nueva playlist</span>
                             </a> 
                         </li>
                         <li>
-                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                            <a href="#" class="flex flex-row items-center gap-3">
                                 <img class="bg-black p-3" src="/Imagenes/carpeta.svg" alt="">
                                 <span>Música nueva 2023</span>
                             </a>   
                         </li>
                         <li>
-                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
+                            <a href="#" class="flex flex-row items-center gap-3">
                                 <img class="bg-black p-3" src="/Imagenes/carpeta.svg" alt="">
                                 <span>TikTok trend</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="ml-3 flex flex-row items-center gap-3">
-                                <img class="bg-black p-3 rounded-b-lg" src="/Imagenes/carpeta.svg" alt="">
+                            <a href="#" class="flex flex-row items-center gap-3">
+                                <img class="bg-black p-3 rounded-bl-lg" src="/Imagenes/carpeta.svg" alt="">
                                 <span>R&B Classic</span>
                             </a>
                         </li>
